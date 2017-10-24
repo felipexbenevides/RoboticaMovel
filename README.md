@@ -1,5 +1,6 @@
 # RoboticaMovel
 Tópicos Avançados em Automação - Seguidor de Linha
+![alt text](https://raw.githubusercontent.com/felipexbenevides/RoboticaMovel/master/arquivos/imgs/3.jpg)
 
 ## Sensores e Atuadores do Robô Seguidor de Linha
 * 2 Motores
