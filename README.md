@@ -18,7 +18,8 @@ Tópicos Avançados em Automação - Seguidor de Linha
         motor_left.idle()
         motor_right.idle()
     else:
-        return```
+        return
+```
 
 
 ## Fluxo Principal do Seguidor de Linha
@@ -66,5 +67,6 @@ while (True):
             my_motor_right.run(80)
             my_motor_left.run(80)
             while (middle_eyes_sensor.get_color() != colors['black']):
-                pass ```
+                pass 
+   ```
 
