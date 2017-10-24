@@ -1,6 +1,5 @@
 # RoboticaMovel
 Tópicos Avançados em Automação - Seguidor de Linha
-![alt text](https://raw.githubusercontent.com/felipexbenevides/RoboticaMovel/master/arquivos/imgs/3.jpg)
 
 ## Sensores e Atuadores do Robô Seguidor de Linha
 * 2 Motores
@@ -20,6 +19,23 @@ Tópicos Avançados em Automação - Seguidor de Linha
         motor_right.idle()
     else:
         return
+```
+## Função de Leitura de Sensores
+```
+def read_sensors(left_eyes,middle_eyes,right_eyes):
+    left_multi = []
+    middle_multi = []
+    right_multi = []
+    for i in range(0,READINGS):
+        left_multi.append(left_eyes.get_color())
+        middle_multi.append(middle_eyes.get_color())
+        right_multi.append(right_eyes.get_color())
+
+    left_counter = Counter(left_multi).most_common(1)[0][0]
+    middle_counter = Counter(middle_multi).most_common(1)[0][0]
+    right_counter = Counter(right_multi).most_common(1)[0][0]
+
+    return left_counter,middle_counter,right_counter
 ```
 
 
